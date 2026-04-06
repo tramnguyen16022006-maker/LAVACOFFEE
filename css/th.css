@@ -1,0 +1,73 @@
+/* 1. Thiết lập Flexbox cho container cha */
+.content-container {
+    display: flex;
+    padding: 10px;
+    background-color: #e1e5cd;
+
+
+    .product-image {
+        width: 50%;
+
+    }
+
+    .nd {
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+    }
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 25px;
+}
+
+
+
+.content-containerr {
+    display: flex;
+    padding: 10px;
+
+
+
+    .ndd {
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+    }
+}
+
+#main-header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    text-align: center;
+    padding: 20px0;
+    background-image: url(../images/nền.jpg);
+    background-size: auto;
+    background-position: center;
+
+
+    h1 {
+        text-shadow: -1px -1px 0 #000;
+        color: white;
+    }
+
+    h2 {
+        text-shadow: -1px -1px 0 #000;
+        color: white;
+    }
+}
+
+#main-nav {
+    background: linear-gradient(180deg, #f0f0f0, #cccccc);
+    border-radius: 5px;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

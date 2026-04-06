@@ -1,0 +1,336 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#page-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+
+.product-card {
+    width: 25%;
+    margin: 1%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(91, 89, 93);
+
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#main-header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    text-align: center;
+    padding: 20px0;
+    background-image: url(../images/nền.jpg);
+    background-size: auto;
+    background-position: center;
+
+    h1 {
+        text-shadow: -1px -1px 0 #000;
+        color: white;
+    }
+
+    h2 {
+        text-shadow: -1px -1px 0 #000;
+        color: white;
+    }
+}
+
+#main-nav {
+    background: linear-gradient(180deg, #f0f0f0, #cccccc);
+    border-radius: 5px;
+}
+
+.product-card {
+    background: linear-gradient(180deg, #ffffff, #e6e6e6);
+}
+
+.button-grounp {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.buy-btn {
+    padding: 10px 5px;
+    background: linear-gradient(to top, #ff6600, #ff3300);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    margin-top: auto;
+}
+
+#category-sidebar {
+    background: linear-gradient(180deg, #f0f0f0, #cccccc);
+
+    h2 {
+        color: orange;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+#main-footer {
+    background: #000;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 200px;
+
+
+    h4 {
+        color: orange;
+        font-size: 30px;
+
+    }
+
+    h5 {
+        color: white;
+        font-size: 25px;
+    }
+
+    .em {
+        b1 {
+            color: orange;
+        }
+
+        b {
+            color: white;
+        }
+    }
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.call-button {
+    position: fixed;
+    bottom: 20px;
+    /* Cách đáy màn hình */
+    right: 20px;
+    /* Cách mép phải */
+    background-color: #28a745;
+    /* Màu xanh lá */
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    z-index: 9999;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.call-button:hover {
+    background-color: #d05494;
+    transform: scale(1.1);
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    60% {
+        transform: rotate(-5deg);
+    }
+
+    70% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.call-button {
+    animation: ring 1s infinite;
+}
+
+/* Import font tương tự style của The Coffee House */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.story-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    /* Hoặc màu kem nhạt nếu muốn */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.story-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+    padding: 0 10%;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 12px 45px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    /* Tạo độ bo tròn cho nút */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.btn-learn-more:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    /* Ẩn các hình ảnh mặc định */
+}
+
+.mySlides img {
+    height: 1200px;
+    width: 1000px;
+    /* Bạn có thể chỉnh độ cao tùy ý */
+    object-fit: cover;
+}
+
+/* Nút mũi tên */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+/* Các chấm tròn */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Hiệu ứng Fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.story-section {
+    background: linear-gradient(180deg, #f0f0f0, #cccccc);
+    background-size: auto;
+}

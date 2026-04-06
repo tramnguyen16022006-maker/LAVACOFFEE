@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Online</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="html" href="../htmls/TH.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div style="position: sticky; top: 0; background: white; z-index: 1000;">
+
+        <header id="main-header">
+            <h1 class="site-title">LAVA COFFEE</h1>
+            <h2 class="tagline">Cà phê nguyên chất-Đậm đà hương vị Việt</h2>
+        </header>
+
+        <!-- NAV -->
+        <nav id="main-nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Trang chủ</a></li>
+                <li class="menu-item"><a href="#Sp.html">Sản phẩm</a></li>
+                <li class="menu-item"><a href="#km.html">Khuyến mãi</a></li>
+                <li class="menu-item"><a href="#lh.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- MAIN -->
+    <section class="story-section">
+
+        <div class="container">
+            <h2 class="story-title">THÔNG ĐIỆP LAVA</h2>
+            <p class="story-content">
+                LAVA Coffee tin rằng, nụ cười là hương vị ngọt ngào nhất trong mỗi ngày mới.
+                Từ những ly cà phê đậm đà, những tách trà thanh mát, đến từng lời chào thân quen,
+                chúng tôi mong mỗi vị khách khi ghé Nhà đều mang theo một niềm vui nhỏ – để rồi
+                nụ cười ấy lại được lan toả khắp nơi.
+            </p>
+
+            <a href="TH.html" class="btn-learn-more">TÌM HIỂU</a>
+        </div>
+
+    </section>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../images/mới.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/pp.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/bot.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center; margin-top: -30px; position: relative; z-index: 10;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <section id="chi-tiet-lava" style="margin-top: 100px;">
+        <h1>SẢN PHẨM NỔI BẬT</h1>
+
+    </section>
+    <div id="Sp.html">
+        <main id="page-layout" class="container">
+
+            <!-- PRODUCT GRID -->
+            <div class="product-grid">
+
+                <div class="product-card featured">
+                    <img class="product-image" src="../images/cf1.jpg" alt="">
+
+                    <h3 class="product-name">CAFFEE ROBUSTA</h3>
+                    <p class="product-price">162.000đ/250g</p>
+
+                    <div class="price-old-container">
+                        <del class="price-old">180.000đ</del>
+                        <span class="discount-percent">-10%</span>
+                    </div>
+
+                    <p class="product-desc">Caffee nguyên hạt rang sẵn, hương thơm nồng nàn </p>
+                    <div class="button-grounp">
+                        <button class="buy-btn">Thêm vào giỏ hàng</button>
+                        <button class="buy-btn">Mua ngay</button>
+
+                    </div>
+                </div>
+
+                <div class="product-card sale">
+                    <img class="product-image" src="../images/cf3.jpg" alt="">
+
+                    <h3 class="product-name">CAFFEE ARABICA</h3>
+                    <p class="product-price">144.000đ/250g</p>
+                    <div class="price-old-container">
+                        <del class="price-old">160.000đ</del>
+                        <span class="discount-percent">-10%</span>
+                    </div>
+                    <p class="product-desc">Caffee nguyên hạt chưa rang, đậm đà hương vị</p>
+                    <div class="button-grounp">
+                        <button class="buy-btn">Thêm vào giỏ hàng</button>
+
+                        <button class="buy-btn">Mua ngay</button>
+                    </div>
+                </div>
+
+                <div class="product-card sale">
+                    <img class="product-image" src="../images/cff2.jpg" alt="">
+
+                    <h3 class="product-name">CAFFEE AMORA</h3>
+                    <p class="product-price">180.000đ/250g</p>
+                    <div class="price-old-container">
+                        <del class="price-old">200.000đ</del>
+                        <span class="discount-percent">-10%</span>
+                    </div>
+                    <p class="product-desc">Caffee rang xay 100% nguyên chất</p>
+                    <div class="button-grounp">
+                        <button class="buy-btn">Thêm vào giỏ hàng</button>
+                        <button class="buy-btn">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- SIDEBAR -->
+    <div id="km.html">
+        <aside id="category-sidebar">
+
+            <h2>Khuyến mãi</h2>
+            <p> Khai trương giảm sâu 10% <br>
+                Quà xịn liền tay khi mua 2 gói ngay trên web (ly, bộ phin pha caffee,...)<br>
+                Giảm giá sâu 20% khi mua trong khung giờ vàng<br>
+                Giảm sâu cho khách hàng mua số lượng lớn<br>
+                Deal siêu hời chỉ có mua trực tiếp trên page<br>
+            </p>
+
+    </div>
+    </aside>
+
+    </main>
+
+    <a href="tel:0901234567" class="call-button">📞GỌI NGAY</Nav></a>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <div class="dm">
+            <b>
+                <h5 class="copyright">Giới thiệu</h5>
+            </b>
+
+            <ul class="footer-links">
+                <li><a href="#">Về sản phầm</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Cửa hàng</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+        </div>
+        <div class="dm">
+            <b>
+                <h5 class="copyright">Điều khoản</h5>
+            </b>
+            <ul class="footer-links">
+                <li><a href="#">Chính sách</a></li>
+                <li><a href="#">Điều khoản</a></li>
+                <li><a href="#">Hỗ trợ</a></li>
+            </ul>
+        </div>
+        <div class="em">
+            <b>
+                <h5>@LAVA COFFEE</h5>
+            </b>
+            <div id="lh.html">
+                <b1>VPGG:</b1>
+                <b>202 Lê Quang Định - Bình Thạnh - Hồ Chí Minh</b><br>
+                <b1>SDT:</b1>
+                <B>0956724689</B><br>
+                <b1>Email:</b1>
+                <b>hello@caphedaklak.com</b><br>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(showSlides, 3000); // Thay đổi hình mỗi 3 giây (3000ms)
+        }
+
+        // Hàm cho nút bấm chuyển hình
+        function plusSlides(n) {
+            // Bạn có thể mở rộng thêm nếu muốn bấm nút dừng tự động
+        }
+    </script>
+
+</body>
+
+</html>
